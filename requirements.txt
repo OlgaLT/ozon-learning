@@ -1,0 +1,8 @@
+flake8==4.0.1
+protobuf==3.19.1
+psycopg2==2.9.2
+psycopg2-binary==2.9.2
+PyHamcrest==2.0.2
+pytest==6.2.5
+requests==2.26.0
+SQLAlchemy==1.4.27
