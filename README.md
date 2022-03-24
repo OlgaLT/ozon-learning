@@ -1,9 +1,10 @@
 # ozon-learning
-Тесты на python для CRUD микросервиса, написанного на go. Сервис запускался локально в Docker контейнере, поэтому обращение через localhost.
+There are only python tests for Go CRUD microservice here. These tests were implemented during studying on a course in Ozon-learning.
+The CRUD service was running locally in Docker container, that's why it is called via localhost
 
-Сервис состоит из 4 ручек:
+The service consist of 4 endpoints:
 
-1. Создание группы: "POST" `http://localhost:8080/v1/groups`
+1. Group create: "POST" `http://localhost:8080/v1/groups`
     
     Body:
     
@@ -23,7 +24,7 @@
     
     ```
     
-2. Список групп: "GET" `http://localhost:8080/v1/groups`
+2. List of groups: "GET" `http://localhost:8080/v1/groups`
     
     Response:
     
@@ -36,7 +37,7 @@
     ]
     ```
     
-3. Описание группы: "GET" `http://localhost:8080/v1/groups/{group_id}`
+3. Group's decription: "GET" `http://localhost:8080/v1/groups/{group_id}`
     
     group_id ≠ 0
     
@@ -51,7 +52,7 @@
     
     group_id not in DB → "not found"
     
-4. Удаление группы: "DELETE" `http://localhost:8080/v1/groups/{group_id}`
+4. Delete group: "DELETE" `http://localhost:8080/v1/groups/{group_id}`
     
     group_id ≠ 0
     
